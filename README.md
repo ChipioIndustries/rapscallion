@@ -4,7 +4,7 @@ Rapscallion is a library for accessing paths which may or may not exist.
 
 ## Constructor
 
-A constructor is provided to allow for multiple Rapscallion instances with different configuations.
+A constructor is provided to allow for multiple Rapscallion instances with different configurations.
 
 `Rapscallion Rapscallion.new([table config])`
 
