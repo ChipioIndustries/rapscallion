@@ -1,0 +1,10 @@
+# Wally packages
+/DevPackages
+/Packages
+
+# Project place file
+/rapscallion.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock

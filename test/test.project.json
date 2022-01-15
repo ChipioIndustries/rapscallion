@@ -1,0 +1,30 @@
+{
+	"name": "Rapscallion",
+	"tree": {
+		"$className": "DataModel",
+	
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"$path": "shared",
+			"Rapscallion": {
+				"$path": "../default.project.json"
+			},
+			"DevPackages": {
+				"$path": "../DevPackages"
+			}
+		},
+
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"$path": "server"
+		},
+
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"$path": "client"
+			}
+		}
+	}
+}
