@@ -1,3 +1,6 @@
+![Unit Tests](https://github.com/chipioindustries/rapscallion/workflows/Unit%20Tests/badge.svg)
+![Create Release](https://github.com/chipioindustries/rapscallion/workflows/Create%20Release/badge.svg)
+
 # Rapscallion
 
 Rapscallion is a library for accessing paths which may or may not exist.
