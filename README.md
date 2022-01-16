@@ -1,5 +1,5 @@
-![Unit Tests](https://github.com/chipioindustries/rapscallion/workflows/Unit%20Tests/badge.svg)
-![Create Release](https://github.com/chipioindustries/rapscallion/workflows/Create%20Release/badge.svg)
+![Unit Tests](https://github.com/chipioindustries/rapscallion/actions/workflows/ci.yml/badge.svg)
+![Create Release](https://github.com/chipioindustries/rapscallion/actions/workflows/release.yml/badge.svg)
 
 # Rapscallion
 
