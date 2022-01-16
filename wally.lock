@@ -4,7 +4,7 @@ registry = "test"
 
 [[package]]
 name = "chipioindustries/rapscallion"
-version = "1.0.0"
+version = "0.1.0"
 dependencies = [["Llama", "freddylist/llama@1.1.1"]]
 
 [[package]]
