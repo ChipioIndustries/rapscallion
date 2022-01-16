@@ -1,7 +1,7 @@
-# v0.1.0
+## v0.1.0
 
 Test release.
 
-# v0
+## v0
 
 Developing release action.
