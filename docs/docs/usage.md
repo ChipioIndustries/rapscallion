@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Usage
 
 Begin by requiring the module.
