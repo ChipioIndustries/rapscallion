@@ -1,3 +1,7 @@
+## v1.0.1
+
+Broken deployment cleanup.
+
 ## v1.0.0
 
 Initial release.
