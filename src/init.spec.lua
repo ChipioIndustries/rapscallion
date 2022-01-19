@@ -169,7 +169,7 @@ return function()
 								notYetExistingFolder = rapscallion:waitForRoute(
 									testModel,
 									route,
-									5
+									timeout
 								)
 							end)
 

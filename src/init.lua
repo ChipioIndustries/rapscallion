@@ -5,6 +5,8 @@ Rapscallion.__index = Rapscallion
 
 local DefaultConfig = require(script.DefaultConfig)
 
+local unusedVariable = "hi"
+
 function Rapscallion.new(config: DefaultConfig.Config?)
 	config = Llama.Dictionary.join(DefaultConfig, config or {})
 
