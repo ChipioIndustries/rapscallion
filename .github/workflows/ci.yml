@@ -3,6 +3,8 @@ name: CI
 on:
   pull_request:
   push:
+    paths-ignore:
+      - "docs/**"
 
 jobs:
   unit-tests:
@@ -52,3 +54,19 @@ jobs:
       - name: Check test status
         shell: bash
         run: cat test-out.txt | grep "0 failed, 0 skipped" || (cat test-out.txt && exit 1)
+  linting:
+    name: Linting
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2.3.4
+
+      - name: Install Foreman
+        uses: rojo-rbx/setup-foreman@v1.0.1
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Run Selene
+        shell: bash
+        run: selene src

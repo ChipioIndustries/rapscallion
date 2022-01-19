@@ -8,7 +8,8 @@ local DefaultConfig = require(script.DefaultConfig)
 function Rapscallion.new(config: DefaultConfig.Config?)
 	config = Llama.Dictionary.join(DefaultConfig, config or {})
 
-	assert(typeof(config.separator) == "string", "Separator must be a string, got " .. typeof(config.separator))
+	assert(typeof(config.separator) == "string", "separator must be a string, got " .. typeof(config.separator))
+	assert(typeof(config.buildClass) == "string", "buildClass must be a string, got " .. typeof(config.buildClass))
 
 	local self: table = {
 		_config = config;
@@ -26,7 +27,7 @@ function Rapscallion:buildRoute(startingPoint: Instance, route: string)
 	for _, routeSegment in pairs(routeSegments) do
 		local nextResult = result:FindFirstChild(routeSegment)
 		if not nextResult then
-			nextResult = Instance.new("Folder")
+			nextResult = Instance.new(self._config.buildClass)
 			nextResult.Parent = result
 			nextResult.Name = routeSegment
 		end

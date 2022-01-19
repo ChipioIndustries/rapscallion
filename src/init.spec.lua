@@ -13,6 +13,12 @@ local configsToTest = {
 			separator = "/";
 		};
 	};
+	{
+		name = "build class config";
+		config = {
+			buildClass = "Model";
+		}
+	}
 }
 
 local configsToFail = {
@@ -26,6 +32,12 @@ local configsToFail = {
 			separator = 5;
 		};
 	};
+	{
+		name = "non-string build class";
+		config = {
+			buildClass = 5;
+		}
+	}
 }
 return function()
 	describe("Rapscallion", function()
@@ -77,6 +89,7 @@ return function()
 						)
 
 						expect(sampleFolder).to.be.a("userdata")
+						expect(sampleFolder:IsA(rapscallion._config.buildClass)).to.equal(true)
 						expect(sampleFolder:IsDescendantOf(testModel)).to.equal(true)
 
 						expect(overlappingFolder).to.be.a("userdata")
@@ -169,7 +182,7 @@ return function()
 								notYetExistingFolder = rapscallion:waitForRoute(
 									testModel,
 									route,
-									5
+									timeout
 								)
 							end)
 
