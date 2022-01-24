@@ -1,7 +1,7 @@
 [package]
 name = "chipioindustries/rapscallion"
 description = "Easily travel long paths/routes in the datamodel in various ways."
-version = "0.9.0"
+version = "1.0.2"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 
