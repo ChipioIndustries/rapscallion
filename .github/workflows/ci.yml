@@ -5,7 +5,8 @@ on:
   push:
     paths-ignore:
       - "docs/**"
-
+      - CHANGELOG.md
+      
 jobs:
   unit-tests:
     name: Unit Tests

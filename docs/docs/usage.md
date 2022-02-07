@@ -74,3 +74,17 @@ else
 	error("textButton hasn't loaded in 5 seconds")
 end
 ```
+
+## Building a Route
+
+The `waitForRoute` function has behavior identical to `getRoute`, except when it encounters a nonexistent route segment, it will create the segment and continue as normal.
+
+```lua
+local textButton = Rapscallion:waitForRoute(game.Players.LocalPlayer, "PlayerGui.ScreenGui.Frame.TextButton", 5)
+
+if textButton then
+	--handle textButton
+else
+	error("textButton hasn't loaded in 5 seconds")
+end
+```

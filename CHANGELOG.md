@@ -1,3 +1,12 @@
+## v1.0.3
+
+* Config can no longer be edited after creation
+* Fixed documentation samples
+
+## v1.0.2
+
+Improve docs.
+
 ## v1.0.1
 
 Broken deployment cleanup.
