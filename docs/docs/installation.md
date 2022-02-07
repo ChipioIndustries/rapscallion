@@ -11,7 +11,7 @@ Rapscallion can be installed in several ways depending on your workflow.
 * Add this line to your `wally.toml` file under `[dependencies]`:
 
 	```toml
-	Rapscallion = "chipioindustries/rapscallion@1.0.2"
+	Rapscallion = "chipioindustries/rapscallion@1.0.3"
 	```
 
 * Then run `wally install` to install the package.
