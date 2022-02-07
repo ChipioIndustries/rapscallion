@@ -17,6 +17,9 @@ function Rapscallion.new(config: DefaultConfig.Config?)
 
 	setmetatable(self, Rapscallion)
 
+	table.freeze(self)
+	table.freeze(config)
+
 	return self
 end
 

@@ -25,7 +25,7 @@ local config = {
 
 local rapscallion = Rapscallion.new(config)
 
-rapscallion.waitForRoute(ReplicatedStorage, "instance.with.periods.in.name/MyInstance")
+rapscallion:waitForRoute(ReplicatedStorage, "instance.with.periods.in.name/MyInstance")
 ```
 
 :::tip
@@ -49,7 +49,7 @@ local config = {
 
 local rapscallion = Rapscallion.new(config)
 
-local checkpoints = rapscallion.buildRoute(workspace, "Maps.MyMap.Checkpoints")
+local checkpoints = rapscallion:buildRoute(workspace, "Maps.MyMap.Checkpoints")
 
 print(checkpoints:GetBoundingBox())
 ```
