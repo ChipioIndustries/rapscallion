@@ -11,3 +11,6 @@
 
 # Foreman installation
 /.foreman-install
+
+# Selene file
+roblox.toml
