@@ -4,16 +4,16 @@
 
 # Rapscallion
 
-Rapscallion is a library for accessing and building paths in the data model. 
+Rapscallion is a library for accessing and building paths in the data model.
 
 ## Installing with Wally
 
 * Add this line to your `wally.toml` file under `[dependencies]`:
 
 	```toml
-	Rapscallion = "chipioindustries/rapscallion@1.0.3"
+	Rapscallion = "chipioindustries/rapscallion@1.0.4"
 	```
 
 * Then run `wally install` to install the package.
 
-For more installation methods and usage instructions, see the [documentation](https://chipioindustries.github.io/rapscallion).
+For usage instructions, see the [documentation](https://chipioindustries.github.io/rapscallion).

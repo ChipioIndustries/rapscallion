@@ -27,30 +27,6 @@ jobs:
           echo "$WALLY_AUTH" > ~/.wally/auth.toml
           wally publish
 
-      - name: Install Packages
-        shell: bash
-        run: |
-          wally install
-
-      - name: Build rbxm
-        shell: bash
-        run: |
-          rojo build default.project.json -o Rapscallion.rbxm
-
-      - name: Copy Packages
-        shell: bash
-        run: |
-          cp -r Packages src/Packages
-
-      - name: Install zip
-        uses: montudor/action-zip@v1
-
-      - name: Build zip
-        shell: bash
-        run: |
-          mv src Rapscallion
-          zip -r Packaged.zip Rapscallion
-
       - name: Get version
         id: get_version
         run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/}
@@ -65,5 +41,3 @@ jobs:
           body_path: log.md
           fail_on_unmatched_files: true
           files: |
-            Rapscallion.rbxm
-            Packaged.zip

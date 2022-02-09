@@ -1,3 +1,7 @@
+## v1.0.4
+
+* Fix file organization
+
 ## v1.0.3
 
 * Config can no longer be edited after creation
