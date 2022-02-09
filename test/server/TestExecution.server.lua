@@ -4,7 +4,7 @@ local TestEZ = require(ReplicatedStorage.DevPackages.TestEZ)
 
 TestEZ.TestBootstrap:run(
 	{
-		ReplicatedStorage.Rapscallion
+		ReplicatedStorage.Packages.Rapscallion
 	},
 	TestEZ.Reporters.TextReporter
 )

@@ -1,4 +1,4 @@
-local Llama = require(script.Packages.Llama)
+local Llama = require(script.Parent.Llama)
 
 local Rapscallion = {}
 Rapscallion.__index = Rapscallion

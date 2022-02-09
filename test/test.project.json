@@ -6,11 +6,15 @@
 		"ReplicatedStorage": {
 			"$className": "ReplicatedStorage",
 			"$path": "shared",
-			"Rapscallion": {
-				"$path": "../default.project.json"
-			},
 			"DevPackages": {
 				"$path": "../DevPackages"
+			},
+			"Packages": {
+				"$className": "Folder",
+				"$path": "../Packages",
+				"Rapscallion": {
+					"$path": "../default.project.json"
+				}
 			}
 		},
 
